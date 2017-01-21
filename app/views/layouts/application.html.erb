@@ -7,32 +7,38 @@
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-      <%= action_cable_meta_tag %>
       
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= csrf_meta_tags %>
+      <%= csrf_meta_tags %>
   </head>
 
   <body>
     <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Radio Divocion</a>
-    </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">Radio Divocion</a>
+      </div>
+      <!-- ends nav-bar brand/logo -->
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Podcasts</a></li>
       <li><a href="#">About</a></li>
     </ul>
+    <!-- end buttons on left side -->
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
+    <!-- end right augmented buttons -->
   </div>
 </nav>
+
+  <footer class="container">
+    <div class="copyright-footer">
+      <p>&copy; Maxx Alexander - 2016</p>
+    </div>
+  </footer><!-- /footer -->
   </body>
 </html>
