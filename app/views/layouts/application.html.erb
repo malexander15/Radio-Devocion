@@ -3,6 +3,8 @@
   <head>
     <title>Radio Divocion</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+      <link href="https://fonts.googleapis.com/css?family=Lato:900i" rel="stylesheet">
   
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   
@@ -27,16 +29,24 @@
       <li><a href="#">About</a></li>
     </ul>
     <!-- end buttons on left side -->
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <ul class="nav navbar-nav navbar-right"><!-- this starts the navbar right icons and searh bar. search button is to the left of form followed by sign up login. -->
+      <li class="form-pad">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Discover</button>
+      </li>
+      <li class="form-pad">
+        <form class="form-inline">
+        <em><input class="form-control mr-sm-2" type="text" placeholder="Find Podcasts">
+        </form></em>
+      </li>
     </ul>
     <!-- end right augmented buttons -->
   </div>
 </nav>
 
-  <footer class="container">
-    <div class="copyright-footer">
+   <%= yield %>
+
+  <footer class="container copyright-footer">
+    <div>
       <p>&copy; Maxx Alexander - 2016</p>
     </div>
   </footer><!-- /footer -->

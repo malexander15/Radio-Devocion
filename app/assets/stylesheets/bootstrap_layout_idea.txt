@@ -1,0 +1,2 @@
+a function that takes a divs width and divides amongst the bootstrap themed columns
+example: you have a div that is 900px wide and lets just say you want a col-md-4 (so you want 3 column divs) and you want these columns to only be divided evenly amongst the div itself as opposed to the whole web viewport

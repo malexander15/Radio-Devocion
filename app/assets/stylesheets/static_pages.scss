@@ -1,20 +1,78 @@
 body{
-	 background: image-url('landing_page.jpg');
-	 width: 1080;
-	 height: 1260;
-	 color: #1daff7;
-}
-
-.logo{
-	font-size: 1.8em;
-	font-color: #1daff7;
-	padding-top: 50%;
-
+	background: image-url('landing_page.jpg');
 }
 
 .navbar-inverse {
     background-color: #000000;
-    border-color: #1daff7;
+    border-bottom-color: #1daff7;
+    padding: .8%;
+}
+
+.navbar-brand{
+	font-size: 2em;
+	font-style: bold;
+	font-family: 'Lato', sans-serif;
+	font-color: #1daff7;
+}
+
+.navbar-nav{
+	font-size: 1.1em;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+}
+
+.form-pad{
+	display: inline;
+	padding-top: 2%;
+}
+
+button.btn-outline-success{
+	color: #1daff7;
+}
+
+.logo-box{
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.lb{
+	padding-top: 100px;
+}
+
+.logo{
+	font-size: 4em;
+	text-align: center;
+	color:  #1daff7;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+}
+
+.underling{
+	text-align: center;
+	font-size: 1.9em;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	color: #e4fffd;
+}
+
+.btn-center{
+	text-align: center;
+	padding-top: 4%;
+}
+
+.btn-primary{
+	width: 25%;
+	background-color: #1daff7;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+}
+
+footer{
+	border-color: #1daff7;
+	border: 2px;
+	position: fixed;
+	z-index: -1;
 }
 
 footer.container{
@@ -24,5 +82,8 @@ footer.container{
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 6%;
+  color: #9d9d9d;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
 }
