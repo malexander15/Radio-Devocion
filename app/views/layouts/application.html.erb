@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Radio Divocion</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
-      <link href="https://fonts.googleapis.com/css?family=Lato:900i" rel="stylesheet">
+    <title>Radio Divocion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:900i" rel="stylesheet">
   
-      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   
-      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   
       <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-        <a class="navbar-brand" href="#">Radio Divocion</a>
-      </div>
-      <!-- ends nav-bar brand/logo -->
-    <ul class="nav navbar-nav">
-      <li><a href="#">Podcasts</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-    <!-- end buttons on left side -->
-    <ul class="nav navbar-nav navbar-right"><!-- this starts the navbar right icons and searh bar. search button is to the left of form followed by sign up login. -->
-      <li class="form-pad">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Discover</button>
+<!--   <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+        </a>
       </li>
-      <li class="form-pad">
-        <form class="form-inline">
-        <em><input class="form-control mr-sm-2" type="text" placeholder="Find Podcasts">
-        </form></em>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <!-- end right augmented buttons -->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-</nav>
+</nav>  -->
+
+<div class="navbar navbar-light navbar-fixed-top" role="navigation">
+  <div class="container">
+  	<div class="navbar-header">
+  	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  	    <span class="sr-only">Toggle navigation</span>
+  	    <span class="icon-bar"></span>
+  	    <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <a class="navbar-brand active" href="#">Radio Devocion</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#">Podcasts</a></li>
+      	<li><a href="#">About</a></li>
+      	<li class="dropdown">
+      	  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+      	  <ul class="dropdown-menu">
+      	    <li class="dropdown-header">Log-in/out + Sign up(coming soon)</li>
+      	    <li><a href="#">Login</a></li>
+      	    <li><a href="#">Sign</a></li>
+      	  </ul>
+      	</li>
+      </ul>	
+
+    </div>
+  </div>
+</div>
 
    <%= yield %>
 
-  <footer class="container copyright-footer">
-    <div>
-      <p>&copy; Maxx Alexander - 2016</p>
-    </div>
-  </footer><!-- /footer -->
+  <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    	<div class="container">
+    		<div class="navbar-text pull-left">
+    			<p>© 2017 Radio Devocion.</p>
+    		</div>
+    		<div class="navbar-text pull-right">
+              <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+              <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+              <a href="#"><i class="fa-google-plus fa-2x"></i></a>
+    		</div>
+    	</div>
+    </div><!-- /footer -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
+    
 </html>

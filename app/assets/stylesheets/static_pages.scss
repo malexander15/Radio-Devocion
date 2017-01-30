@@ -2,39 +2,33 @@ body{
 	background: image-url('landing_page.jpg');
 }
 
-.navbar-inverse {
-    background-color: #000000;
-    border-bottom-color: #1daff7;
-    padding: .8%;
+.navbar-toggle {
+    background-color: #fff;
 }
+
+.icon-bar{
+	background-color: #000;
+}
+
 
 .navbar-brand{
 	font-size: 2em;
 	font-style: bold;
 	font-family: 'Lato', sans-serif;
-	font-color: #1daff7;
+	color: #1daff7;
 }
 
 .navbar-nav{
 	font-size: 1.1em;
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
-}
-
-.form-pad{
-	display: inline;
-	padding-top: 2%;
+	background-color: #000;
 }
 
 button.btn-outline-success{
 	color: #1daff7;
 }
 
-.logo-box{
-	margin-left: auto;
-	margin-right: auto;
-	
-}
 
 .lb{
 	padding-top: 100px;
@@ -62,28 +56,14 @@ button.btn-outline-success{
 }
 
 .btn-primary{
-	width: 25%;
+	width: 50%;
 	background-color: #1daff7;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.1em;
 }
 
-footer{
-	border-color: #1daff7;
-	border: 2px;
-	position: fixed;
-	z-index: -1;
-}
-
-footer.container{
-  background-color: #000;
-  padding-top: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 6%;
-  color: #9d9d9d;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
+.navbar-text > a {
+	color: inherit;
+	text-decoration: none;
+	padding: 7px;
 }
