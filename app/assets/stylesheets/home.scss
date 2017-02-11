@@ -1,7 +1,34 @@
 .logo-box{
 	background: image-url('Drawing.jpeg');
 	height: 100vh;
+	width: 100%;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	text-align: center;
+}
+
+.lb{
+	padding-top: 100px;
+}
+
+.logo{
+	font-size: 4em;
+	text-align: center;
+	color:  #1daff7;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+}
+
+.underling{
+	text-align: center;
+	font-size: 1.9em;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	color: #e4fffd;
+}
+
+.btn-center{
+	text-align: center;
+	padding-top: 4%;
 }

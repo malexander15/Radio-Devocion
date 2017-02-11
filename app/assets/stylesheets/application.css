@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+.navbar-toggle {
+    background-color: #fff;
+}
+
+.icon-bar{
+	background-color: #000;
+}
+
+
+.navbar-brand{
+	font-size: 2em;
+	font-style: bold;
+	font-family: 'Lato', sans-serif;
+	color: #1daff7;
+}
+
+.navbar-nav{
+	font-size: 1.1em;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	background-color: #000;
+}
+
+button.btn-outline-success{
+	color: #1daff7;
+}
+
+
+
+
+.btn-primary{
+	width: 50%;
+	background-color: #1daff7;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1em;
+}
+
+.navbar-text > a {
+	color: inherit;
+	text-decoration: none;
+	padding: 7px;
+}
