@@ -1,25 +1,21 @@
-<p id="notice"><%= notice %></p>
 <div class="container-fluid" id="casts-banner">
   <h1>Casts</h1>
-
 </div>
 
-
-
-
-  <tbody>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-12">
     <% @casts.each do |cast| %>
-      <tr>
-        <td><%= cast.title %></td>
-        <td><%= cast.description %></td>
-        <td><%= cast.episode %></td>
-        <td><%= link_to 'Show', cast %></td>
-        <td><%= link_to 'Edit', edit_cast_path(cast) %></td>
-        <td><%= link_to 'Destroy', cast, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <%= image_tag cast_thumbnail.url(:medium) %>
+      <h3 class="podcast-title"><%= cast.title %></h3>
+      <p><%= cast.description %></p>
+      <p><%= cast.episode %></p>
+    </div>
+  </div>
+  <% end %>
+
+
+</div>
 
 <br>
 

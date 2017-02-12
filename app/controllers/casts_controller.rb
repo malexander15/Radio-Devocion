@@ -69,6 +69,6 @@ class CastsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cast_params
-      params.require(:cast).permit(:title, :description, :episode)
+      params.require(:cast).permit(:title, :description, :episode, :mp3, :cast_thumbnail)
     end
 end
