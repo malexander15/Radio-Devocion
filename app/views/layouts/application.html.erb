@@ -23,11 +23,11 @@
 
   <body>
  <% if alert %>
-	<div id="notice_wrapper">
+	<div id="alert">
 		<p class="alert"><%= alert %></p>
 	</div>
 <% elsif notice %>
-	<div id="notice_wrapper">
+	<div id="notice">
 		<p class="notice"><%= notice %></p>
 	</div>
 <% end %>
@@ -47,13 +47,17 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
       	<li><%= link_to "Podcasts", casts_path  %></li>
-      	<li><a href="#">About</a></li>
+      	<li><%= link_to "About", static_pages_about_path %></li>
       	<li class="dropdown">
       	  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
-      	  <ul class="dropdown-menu">
-      	    <li class="dropdown-header">Log-in/out + Sign up(coming soon)</li>
-      	    <li><a href="#">Login</a></li>
-      	    <li><a href="#">Sign</a></li>
+      	  <ul class="dropdown-menu navbar-nav">
+      	    <li class="dropdown-header">Log-in/out + Sign up</li>
+      	   <% unless user_signed_in? %>
+      	    <li><%= link_to "Sign In", new_user_session_path %></li>
+      	    <li><%= link_to "Sign-Up", new_user_registration_path %></li>
+      	    <% else %>
+      	    <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+      	    <% end %>
       	  </ul>
       	</li>
       </ul>	

@@ -31,6 +31,10 @@
 	background-color: #000;
 }
 
+.navbar-light{
+	background-color: #e3f2fd;
+}
+
 
 .navbar-brand{
 	font-size: 2em;
