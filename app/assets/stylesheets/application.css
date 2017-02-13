@@ -61,6 +61,7 @@ button.btn-outline-success{
 	background-color: #1daff7;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.1em;
+	text-align: center;
 }
 
 .navbar-text > a {
