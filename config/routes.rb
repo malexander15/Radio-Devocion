@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   
 
+  get 'sessions/new'
+
   resources :users
+  resources :sessions
   resources :casts
   get 'static_pages/about'
 
