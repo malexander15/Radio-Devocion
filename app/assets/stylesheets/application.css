@@ -18,6 +18,10 @@
  	margin: 0;
  }
 
+ #notice{
+ 	margin-top: 52px;
+ }
+
  .navbar-fixed-top{
  	margin-top: 0;
  	margin-bottom: 0px;
