@@ -50,5 +50,18 @@ group :development do
   gem 'sqlite3'
 end
 
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  #gem 'capybara-webkit'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
