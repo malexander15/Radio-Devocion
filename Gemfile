@@ -24,8 +24,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'devise'
-
+gem 'devise', '~> 4.3'
 gem "paperclip", "~> 5.0.0"
 
 # Use Capistrano for deployment
